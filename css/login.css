@@ -1,0 +1,140 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    /* text-decoration: none; */
+    transition: .2s linear;
+    scroll-behavior: smooth;
+}
+/* 
+.main{
+    width:100%;
+    background-color:#fff;
+    padding: 50px;
+    height: auto;
+} */
+
+body{
+    background-color:#edebe9;
+}
+
+.container{
+    display: flex;
+    margin-left: 15%;
+    align-items: center;
+    margin-top: 60px;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.container .login_form{
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+}
+.container .login_form .password,.container .login_form .mail{
+    display: flex;
+    margin-left: 17%;
+}
+
+.container .login_form .icon,.container .login_form .icon{
+    margin-top: 30px;
+    margin-left: -25px;
+}
+
+
+h2{
+    color: #0e382c;
+    margin-top: 40px;
+  }
+  
+  input[type="email"],input[type="password"]{
+    /* margin-left: 30px; */
+    width: 300px;
+  }
+  
+    i{
+      color: black;
+  }
+  
+
+  #email, #password {
+    height: 35px;
+    width: 280px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    padding-bottom: 1px;
+    margin-top: 25px;
+    padding-left: 10px; /* Add padding to create space */
+}
+
+    
+  .btn-submit{
+    height: 40px;
+    width: 280px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    background-color: #00754a;
+    margin-left: -15px;
+  }
+  
+  .btn-submit:hover{
+    cursor: pointer;
+    /* color: black; */
+    background-color:  #0e382c;
+  }
+  
+  
+  .register{
+    margin-top: 16px;  
+    font-weight: 600;
+    color: black; 
+    margin-left: -3%; 
+  }
+    
+  /* .login_form input::placeholder{
+    margin-left:-10px;
+  }
+     */
+
+  .r-link{
+    text-decoration: none;
+    color: #09764e;
+    /* margin-left: -5%; */
+  }
+  
+  .r-link:hover{
+    color:red;
+  }
+  
+  .clip_art{
+    width:450px;
+    background-color: #0e382c;
+    height: 400px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+  }
+
+ .container .clip_art img{
+    margin-left: 13%;
+  }
+
+  .container .clip_art img:hover{
+    transform: scale(1.1);
+  }

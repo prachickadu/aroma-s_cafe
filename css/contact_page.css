@@ -1,0 +1,140 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    /* text-decoration: none; */
+    transition: .2s linear;
+    scroll-behavior: smooth;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar{
+width: .6rem;
+}
+
+html::-webkit-scrollbar-track{
+background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+background: #00754a;
+/* border-radius: 2rem; */
+}
+
+.logo{
+    /* border: 2px solid red; */
+    border-radius: 100%;
+    margin-left: -4%;
+}
+
+.header{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    height: 12%;
+    box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+}
+
+.header .navbar{
+    margin-left: 3%;
+    /* border: 2px solid red; */
+    width: 100%;
+    word-spacing: 3rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+    text-decoration:none;
+}
+
+#active{
+    font-weight: bold;
+    border-bottom:  solid #00754a;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url("https://t4.ftcdn.net/jpg/02/76/35/39/360_F_276353920_LYBJg7bylEGmGJJhfFP7waS1kI1jbC4m.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 500px;
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #ecf0f3;
+    border-radius: 10px;
+}
+
+.wrapper h2 {
+    text-align: center; /* Center the heading */
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.wrapper input[type="text"],
+.wrapper input[type="email"],
+.wrapper input[type="tel"],
+.wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: inset 8px 8px 8px#cbc3d1,inset -8px -8px 8px #ffffff ;
+}
+
+.fields input,.fields textarea{
+    border: none;
+    outline: none;
+    background: none;
+    color: #555;
+}
+
+.wrapper textarea {
+    height: 100px; /* Adjust the height of the textarea */
+}
+
+.btn .btn-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #613722;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #6d3a1a;
+}

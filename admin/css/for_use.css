@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.lower{
+    height: 90vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    transition: 0.3s ease-in-out;
+    overflow: hidden; /* Hide content when sidebar is collapsed */
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Content Styles */
+.content {
+    margin-left: 260px; /* Matches the sidebar width */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hide-sidebar {
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.content-expanded {
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Toggle Button Styles */
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: transparent;
+    color: red;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999; /* Ensure the button is above the content */
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+
+/* Right Content Styles */
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Search Box Styles */
+.search-box {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Table Styles */
+.table-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 80px; /* Shrinks sidebar on smaller screens */
+    }
+    .content {
+        margin-left: 90px;
+    }
+
+    .sidebar ul li {
+        font-size: 14px;
+    }
+
+    .sidebar h2 {
+        font-size: 16px;
+    }
+
+    .toggle-btn {
+        top: 10px;
+        left: 90px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 60px; /* Further reduce sidebar width on very small screens */
+    }
+    .content {
+        margin-left: 70px;
+    }
+
+    .sidebar ul li {
+        font-size: 12px;
+    }
+
+    .sidebar h2 {
+        font-size: 14px;
+    }
+
+    .toggle-btn {
+        top: 10px;
+        left: 70px;
+    }
+}

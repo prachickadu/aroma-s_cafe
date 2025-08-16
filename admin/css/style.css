@@ -1,0 +1,247 @@
+/* * {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: .6rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #00754a;
+}
+
+body {
+    background-color: whitesmoke;
+    height: auto;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    margin-left: -4%;
+}
+
+.header {
+    background: #0e382c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 14%;
+    color: white;
+}
+
+.header .logo {
+    background-color: white;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    margin-right: 2rem;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.header .navbar h2 {
+    margin-right: 3.5rem;
+}
+
+.header .icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.header .right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header .search-icon {
+    font-size: 20px;
+    margin-right: 1rem;
+    color: white;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.header .search-bar {
+    display: none; /* Initially hide the search bar */
+    /* padding: 0.5rem;
+    margin-right: 3rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.header .search-bar.show {
+    display: inline-block; /* Show the search bar when toggled */
+/* } */
+
+/* .header .separator {
+    margin-right: 3rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.header .welcome-message p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+} */
+
+/* .main{
+    display:flex;
+    padding-top: 25px;
+    height: auto;
+    width: 100%;
+} */ 
+
+/* .main .sidebar{
+    height:100vh;
+    width:21%;
+    background-color: white;
+    color: black;
+}
+
+.main .sidebar .heading{
+    display: flex;
+    color: black;
+}
+
+/* .main h2{
+    margin-top: 10%;
+} */
+
+/* .main .content{
+    background-color: #edebe9;
+    color: black;
+    width: 79%;
+    height: 100vh;
+}  */
+
+/* style.css */
+body {
+    margin: 0;
+    font-family: poppins;
+}
+
+.sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #0e382c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.mainMenu h2 {
+    text-align: center;
+    letter-spacing: 7px;
+    color: #fff;
+    background: #111;
+    padding: 20px 0;
+}
+
+.sideMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mainMenu a:hover {
+    color: #fff;
+    background: #111;
+}
+
+.sideMenu .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#contentArea {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.contentText {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contentText h2 {
+    background:#0e382c;
+    display: inline-block;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+}
+
+.contentText h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    .contentText {
+        padding: 100px 180px;
+    }
+
+    .contentText h2 {
+        padding: 15px 35px;
+        font-size: 50px;
+    }
+
+    .contentText h3 {
+        font-size: 45px;
+    }
+}
+
+
