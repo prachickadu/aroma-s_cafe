@@ -24,5 +24,4 @@ Aroma's Cafe is a **web-based café management and ordering system** designed to
 
 ## 📸 Screenshots  
 
-```markdown
 ![Homepage](img_git/coffee_shop.jpg)
